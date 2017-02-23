@@ -28,8 +28,8 @@ To view the project source files go to src/
      
 3. Build tasks are defined in the Gruntfile.js                                     
    
-    grunt build:base - builds the whole project
-    grunt build:html - builds the html markup
-    grunt build:css - builds the css styles
-    grunt build:js - builds the JS scripts
+    3.1 grunt build:base - builds the whole project
+    3.2 grunt build:html - builds the html markup
+    3.3 grunt build:css - builds the css styles
+    3.4 grunt build:js - builds the JS scripts
 
