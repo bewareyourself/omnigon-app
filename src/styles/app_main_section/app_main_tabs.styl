@@ -1,0 +1,53 @@
+.app_tabs
+    width 100%
+
+    input, section
+        clear both
+        display none
+        opacity 0
+        transition 0.5s opacity ease-in, 0.8s transform ease
+        transform translateY(0px)
+
+    label
+        display block
+        line-height 3
+        float left
+        width 20%
+        cursor pointer
+        text-align center
+        transition all .5s ease
+        dark-border()
+        &:hover
+            font-weight 700
+            border-color $base-dark
+
+    #tab-1:checked ~ #content-1,
+    #tab-2:checked ~ #content-2,
+    #tab-3:checked ~ #content-3,
+    #tab-4:checked ~ #content-4,
+    #tab-5:checked ~ #content-5
+        display block
+        opacity 1
+    #tab-1:checked ~ #label-1,
+    #tab-2:checked ~ #label-2,
+    #tab-3:checked ~ #label-3,
+    #tab-4:checked ~ #label-4,
+    #tab-5:checked ~ #label-5
+        border-color $base-dark
+        font-weight 700
+
+    .app_tabs_main
+        display flex
+        padding 30px 0
+        .app_tabs_aside
+            width 30%
+            flex-grow 1
+            padding-left 20px
+            .app_tabs_aside_content
+                display flex
+                color $base-green
+                svg
+                    width 15px
+                    height 15px
+                    margin-right 10px
+                    fill $base-green

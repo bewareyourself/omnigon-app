@@ -1,0 +1,16 @@
+{
+    "name": "omnigon",
+    "version": "0.1",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components"
+    ],
+    "dependencies": {
+        "jquery": "1.12.4",
+        "svg4everybody": "latest"
+    },
+    "resolutions": {
+        "jquery": "1.11.1"
+    }
+}

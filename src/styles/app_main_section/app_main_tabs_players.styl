@@ -1,0 +1,29 @@
+.app_tabs_players
+    display flex
+    width 75%
+    flex-wrap wrap
+    .app_tab_player_item
+        width 25%
+        margin 0 1em 28px 0
+        flex-basis 150px
+        .player_item_img
+            circle-item()
+            item-hover()
+            img
+                width 100%
+                height auto
+                border-radius 50%
+            &.player_item_placehold
+                background-color $base-grey
+                svg
+                    width 10px
+                    height 10px
+                    position absolute
+                    margin auto
+                    top 0
+                    left 0
+                    bottom 0
+                    right 0
+        .player_item_name
+            text-align center
+            line-height 1.7

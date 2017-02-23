@@ -1,0 +1,179 @@
+{
+    "siteurl": "http://omnigon.com/",
+    "sitename": "OMNIGON",
+    "title": "OMNIGON Test App",
+    "description": "This is my Omnigon test application",
+    "favicon": "assets/img/favicon.ico",
+    "type": "website",
+    "app_aside": {
+        "aside_logo": "OMNIGON",
+        "aside_btn": "New vote",
+        "aside_section": {
+            "1": {
+                "title": "Draft",
+                "aside_items": {
+                    "1": {
+                        "title": ""
+                    },
+                    "2": {
+                        "title": "Serie A Footballer of the Year",
+                        "img": "1"
+                    }
+                }
+            },
+            "2": {
+                "title": "Active",
+                "aside_items": {
+                    "1": {
+                        "title": "Unleash a Jaguar",
+                        "img": "1"
+                    },
+                    "2": {
+                        "title": "Choose best Wimbledon player and win tickets to the finalsr",
+                        "img": "2"
+                    },
+                    "3": {
+                        "title": "2015 Music Moments",
+                        "img": "3"
+                    }
+                }
+            },
+            "3": {
+                "title": "Closed",
+                "aside_items": {
+                    "1": {
+                        "title": "All time greats",
+                        "img": "1"
+                    },
+                    "2": {
+                        "title": "Insane Dunks",
+                        "img": "2"
+                    },
+                    "3": {
+                        "title": "2014 Music Moments",
+                        "img": "3"
+                    }
+
+                }
+            }
+        }
+
+    },
+    "app_tabs": {
+        "switcher": "Present in random order",
+        "tabs_aside_text": "Embed at least 2 players*",
+        "tabs_input": {
+            "1": {
+                "title": "Detail"
+            },
+            "2": {
+                "title": "Content"
+            },
+            "3": {
+                "title": "Adds"
+            },
+            "4": {
+                "title": "Data Capture"
+            },
+            "5": {
+                "title": "Data Capture"
+            }
+        },
+        "tabs_content": {
+            "1": {
+                "tab_title": "Headline 1",
+                "tab_text": "single horizontal"
+            },
+            "2": {
+                "tab_title": "Headline 2",
+                "tab_text": "single horizontal"
+            },
+            "3": {
+                "tab_title": "Headline 3",
+                "tab_text": "single horizontal"
+            },
+            "4": {
+                "tab_title": "Headline 3",
+                "tab_text": "single horizontal"
+            },
+            "5": {
+                "tab_title": "Headline 3",
+                "tab_text": "single horizontal"
+            }
+        }
+    },
+    "players": {
+        "0": {
+            "name": "DeMar DeRozan"
+        },
+        "1": {
+            "name": "Stephen Curry"
+        },
+        "2": {
+            "name": "Kevin Durant"
+        },
+        "3": {
+            "name": "James Harden"
+        },
+        "4": {
+            "name": "DeAndre Jordan"
+        },
+        "5": {
+            "name": "Russell Westbrook"
+        },
+        "6": {
+            "name": "Chandler Parsons"
+        },
+        "7": {
+            "name": "Kenneth Faried"
+        },
+        "8": {
+            "name": "Gordon Hayward"
+        },
+        "9": {
+            "name": "Mike Conley"
+        },
+        "10": {
+            "name": "Dwight Howard"
+        },
+        "11": {
+            "name": "Trey Burke"
+        },
+        "12": {
+            "name": ""
+        },
+        "13": {
+            "name": ""
+        },
+        "14": {
+            "name": ""
+        },
+        "15": {
+            "name": ""
+        },
+        "16": {
+            "name": ""
+        },
+        "17": {
+            "name": ""
+        },
+        "18": {
+            "name": ""
+        },
+        "19": {
+            "name": ""
+        },
+        "20": {
+            "name": ""
+        },
+        "21": {
+            "name": ""
+        },
+        "22": {
+            "name": ""
+        },
+        "23": {
+            "name": ""
+        }
+    }
+}

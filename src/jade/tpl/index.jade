@@ -1,0 +1,13 @@
+doctype html
+html
+    head
+        include ../mixins/layout/app_head.jade
+    body
+        .svg-container
+            include /svg.html
+        main.app
+            aside.app_aside
+                include ../mixins/layout/app_aside
+            section.app_main
+                include ../mixins/layout/app_main.jade
+        include ../mixins/layout/app_footer.jade

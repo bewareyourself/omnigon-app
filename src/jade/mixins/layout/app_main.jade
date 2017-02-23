@@ -1,0 +1,33 @@
+.app_main_container
+    .app_tabs
+        - each item, index in app_tabs.tabs_input
+            input.app_tab_input(id='tab-' + index, type='radio', name='tabs')
+            label(for='tab-' + index, id='label-' + index)=item.title
+
+        - each item, index in app_tabs.tabs_content
+            section(id='content-' + index).app_tab_content
+                .app_tabs_switcher_row
+                    .app_tabs_switcher_descr
+                        p=app_tabs.switcher
+                    .app_tabs_switcher
+                        input(id='switcher-' + index).switcher_input(type='checkbox', name='watched')
+                        label.switcher_label(for='switcher-' + index)
+                .app_tabs_main
+                    .app_tabs_aside
+                        .app_tabs_aside_content
+                            svg.icon(viewbox='0 0 100 100')
+                                use(xlink:href='#check')
+                            p=app_tabs.tabs_aside_text
+                    .app_tabs_players(id='players-' + index)
+                        - each item, index in players
+                            .app_tab_player_item
+                                if (item.name.length)
+                                    a(href='#').player_item_img
+                                        img(src='assets/img/players/player-'+index+'.jpg', alt=item.name)
+                                else
+                                    a(href='#').player_item_img.player_item_placehold
+                                        img(src='assets/img/players/placehold.jpg', alt=item.name)
+                                        svg.icon(viewbox='0 0 100 100')
+                                            use(xlink:href='#plus')
+                                .player_item_name
+                                    p=item.name

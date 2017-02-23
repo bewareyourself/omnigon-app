@@ -1,0 +1,27 @@
+.app_aside_section.app_aside_head
+    .aside_head_nav_content
+        .aside_head_nav
+            svg.icon(viewbox='0 0 100 100')
+                use(xlink:href='#menu')
+        .aside_head_logo
+            span=app_aside.aside_logo
+    .aside_btn_container
+        button.aside_btn(type='button')=app_aside.aside_btn
+
+- each item, index in app_aside.aside_section
+    .app_aside_section
+        .app_aside_title
+            span=item.title
+        ul.app_aside_nav
+            - each aside_item in item.aside_items
+                if (aside_item.title.length)
+                    li.app_aside_nav_item
+                        a(href='#')
+                            img(src='assets/img/aside/'+index+'/item-'+aside_item.img+'.png', alt=aside_item.title)
+                            span=aside_item.title
+                else
+                    li.app_aside_nav_item
+                        a(href='#')
+                            img(src='assets/img/aside/placeholder.png', alt=app_aside.aside_btn)
+                            span=app_aside.aside_btn
+

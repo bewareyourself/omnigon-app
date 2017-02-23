@@ -1,0 +1,130 @@
+file(name, ext, path)
+    path + '/' + name + '.' + ext
+
+font-face(family, font = family, path = 'fonts', weight = 'normal', style = 'normal')
+    @font-face
+        font-family family
+        src url(file(font, 'eot', path))
+        src url(file(font, 'eot?#iefix', path)) format("embedded-opentype"),
+        url(file(font, 'woff', path)) format("woff"),
+        url(file(font, 'ttf', path)) format("truetype"),
+        url(file(font, 'svg#' + family, path)) format("svg")
+        font-weight weight
+        font-style style
+
+app_main_switcher_label()
+    display inline-block
+    vertical-align top
+    padding-left 50px
+    border-bottom 0
+    cursor pointer
+    position relative
+    transition color .1s linear
+    &:before
+        content ''
+        display block
+        width 40px
+        height 20px
+        background-color $base-grey
+        border-radius 10px
+        position absolute
+        top -2px
+        left 0
+        z-index 1
+        transition background-color .1s linear
+    &:after
+        content ''
+        display block
+        width 24px
+        height 24px
+        background-color $base-white
+        border-radius 50%
+        box-shadow 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 0 1px 0 rgba(0, 0, 0, 0.2)
+        position absolute
+        top -4px
+        left 0
+        z-index 2
+        transition transform .1s linear
+
+    &:active
+        &:after
+            translateX(12px)
+        &:before
+            background-color $base-yellow
+
+
+
+app_main_switcher_input()
+    display: none
+    &:checked + .switcher_label:before
+        background-color $base-dark
+    &:checked + .switcher_label:after
+        transform: translateX(23px)
+        box-shadow 0 0 1px 4px rgba(255, 216, 64, 0.6)
+    &:checked + .switcher_label:active:after
+        transform: translateX(12px)
+    &:checked + .switcher_label:active:before
+        background-color $base-dark
+
+dark-border()
+    border-bottom 1px solid $dark-border
+
+white-border()
+    border-bottom 1px solid $white-border
+
+aside-hover()
+    background $base-yellow
+
+aside-nav-circle()
+    width 13%
+    margin-right 16px
+    border-radius 50%
+    background $circle-bg
+
+aside-btn()
+    background-color rgba(255, 255, 255, 0.95)
+    box-shadow 0 0 1px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.1)
+    border 0
+    border-radius 4px
+    width 120px
+    padding 5px 10px
+    cursor pointer
+
+circle-item()
+    display block
+    max-width 148px
+    max-height 148px
+    position relative
+    margin 0 auto
+    border-radius 50%
+    overflow hidden
+    border 1px solid $dark-border
+
+nav-hover()
+    &:hover
+        background-color $base-yellow
+        color $base-dark
+
+item-hover()
+    &:after
+        content ''
+        position absolute
+        left 0
+        top 0
+        border-radius 50%
+        width 100%
+        height 100%
+        background-color rgba(0, 0, 0, 0.25)
+        opacity 0
+        transition: all .5s ease
+    &:hover
+        &:after
+            opacity 1
+
+center()
+    display flex
+    align-items center
+    justify-content center
+
+
+

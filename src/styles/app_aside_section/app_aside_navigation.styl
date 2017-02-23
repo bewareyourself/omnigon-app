@@ -1,0 +1,19 @@
+.app_aside_nav
+    .app_aside_nav_item
+        .nav_circle
+            aside-nav-circle()
+        &.active
+            background $base-yellow
+            a
+                font-weight 700
+                color $base-dark
+        a
+            display flex
+            align-items center
+            color $base-white
+            text-decoration none
+            padding .7vw .8vw
+            transition all .5s ease
+            nav-hover()
+            img
+                aside-nav-circle()
