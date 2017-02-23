@@ -1,13 +1,18 @@
 ### Test Application Overview
 
-To view the project page go to app/ folder and open index.html file
-Jadde, Stylus and CoffeScript are used as preprocessoring tools
-Final CSS/JS files are concatenated and minified to reduce page load time. Also HTML minifiacation is used to remove all unnecessary comments and spaces
-NPM, Grunt GTX are used to configure the frontend build structure. 
-All Grunt tasks settings can be found in the src/grunt folder.
-All data including images are defined in the src/languages/default/data.json file and parsed directly into the jade files.
-All SVG icons are generated into one SVG sprite.
+To view the project page go to app/ folder and open index.html file.
 
+Jadde, Stylus and CoffeScript are used as preprocessoring tools.
+
+Final CSS/JS files are concatenated and minified to reduce page load time. Also HTML minifiacation is used to remove all unnecessary comments and spaces.
+
+NPM, Grunt GTX are used to configure the frontend build structure.
+ 
+All Grunt tasks settings can be found in the src/grunt folder.
+
+All data including images are defined in the src/languages/default/data.json file and parsed directly into the jade files.
+
+All SVG icons are generated into one SVG sprite.
 
 To view the project source files go to src/
 

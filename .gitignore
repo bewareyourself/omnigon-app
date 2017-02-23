@@ -1,1 +1,8 @@
-# Created by .ignore support plugin (hsz.mobi)
+/.idea
+/src/node_modules
+/src/bower_components
+/src/compiled-js
+/src/compiled-css
+/src/jade/svg.html
+/src/files/svg-final
+/src/npm-debug.log
