@@ -16,6 +16,8 @@ All SVG icons are generated into one SVG sprite.
 
 To view the project source files go to src/
 
+PS: Players suffle checkbox is working :)
+
 
 ### Installation
 
